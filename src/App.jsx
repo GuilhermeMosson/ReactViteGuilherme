@@ -46,7 +46,79 @@ function App() {
       <Card
         title = 'Foto do Sol'
         image = {img02}
-        text1 = "descrição da paisagem"
+        text1 = "Casa de Rá DEUS SOL"
+        text2 = "Curitiba/PR"
+        />
+      </Tilt>
+
+      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+      <Card
+        title = 'Foto do Sol'
+        image = {img02}
+        text1 = "Casa de Rá DEUS SOL"
+        text2 = "Curitiba/PR"
+        />
+      </Tilt>
+
+      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+      <Card
+        title = 'Foto do Sol'
+        image = {img02}
+        text1 = "Casa de Rá DEUS SOL"
+        text2 = "Curitiba/PR"
+        />
+      </Tilt>
+
+      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+      <Card
+        title = 'Foto do Sol'
+        image = {img02}
+        text1 = "Casa de Rá DEUS SOL"
+        text2 = "Curitiba/PR"
+        />
+      </Tilt>
+
+      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+      <Card
+        title = 'Foto do Sol'
+        image = {img02}
+        text1 = "Casa de Rá DEUS SOL"
+        text2 = "Curitiba/PR"
+        />
+      </Tilt>
+
+      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+      <Card
+        title = 'Foto do Sol'
+        image = {img02}
+        text1 = "Casa de Rá DEUS SOL"
+        text2 = "Curitiba/PR"
+        />
+      </Tilt>
+
+      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+      <Card
+        title = 'Foto do Sol'
+        image = {img02}
+        text1 = "Casa de Rá DEUS SOL"
+        text2 = "Curitiba/PR"
+        />
+      </Tilt>
+
+      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+      <Card
+        title = 'Foto do Sol'
+        image = {img02}
+        text1 = "Casa de Rá DEUS SOL"
+        text2 = "Curitiba/PR"
+        />
+      </Tilt>
+
+      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+      <Card
+        title = 'Foto do Sol'
+        image = {img02}
+        text1 = "Casa de Rá DEUS SOL"
         text2 = "Curitiba/PR"
         />
       </Tilt>

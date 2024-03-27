@@ -4,18 +4,19 @@ import 'leaflet-defaulticon-compatibility';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 import Menu from  "./components/Menu"
+import style from "./Contact.module.css"
 
 export const Contact = () => {
     const geoData = ({lat:-25.4249247 , long:-49.273092})
     return(
         <>
         <Menu />
-        <div>
+        <div className={style.sectionContact}>
             <h1>Contato</h1>
             <div>
                 <h2>Mapa</h2>
                 <div>
-                <MapContainer center={[geoData.lat, geoData.long] } zoom={13} scrollWheelZoom={false} style={{width: "90%", height: "700px"}}>
+                <MapContainer center={[geoData.lat, geoData.long] } zoom={13} scrollWheelZoom={false} style={{width: "100%", height: "700px"}}>
                     <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
