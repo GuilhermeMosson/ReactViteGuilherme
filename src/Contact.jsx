@@ -5,14 +5,52 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 import Menu from  "./components/Menu"
 import style from "./Contact.module.css"
+import { useState } from 'react';
 
 export const Contact = () => {
     const geoData = ({lat:-25.4249247 , long:-49.273092})
+
+    const defaultPhoneNumber = '554199999999'
+
+    const[ formData, setformData ] = useState({
+        name: "",
+        email: "",
+        message: ""
+    })
+
+    const hadleChange = (e) => {
+        const{name, value} = e.taget;
+        setformData({...formData, [name]: value})
+    }
+
+    const handleZap = () => {
+        const {name, email, message} = formData;
+
+        const urlZAPZAP = `https://api.whatsapp.com/send?phone=${defaultPhoneNumber}$text=
+        Nome:%20${name}%0D%0A
+        Email:%20${email}%0D%0A
+        Mensagem%20${message}%0D%0A`
+
+        window.open(urlZAPZAP, '_blank')
+    }
     return(
         <>
         <Menu />
         <div className={style.sectionContact}>
             <h1>Contato</h1>
+            <div>
+                <label htmlFor="name">Nome</label>
+                <input type="text" id='name' name='name' value={formData.name} onChange={hadleChange} required />
+            </div>
+            <div>
+                <label htmlFor="email">Email</label>
+                <input type="email" id='email' name='email' value={formData.email} onChange={hadleChange} required />
+            </div>
+            <div>
+                <label htmlFor="message">Mensagem</label>
+                <input type="text" id='message' name='message' value={formData.message} onChange={hadleChange} required />
+            </div>
+            <button onClick={handleZap}>Enviar mensagem</button>
             <div>
                 <h2>Mapa</h2>
                 <div>
